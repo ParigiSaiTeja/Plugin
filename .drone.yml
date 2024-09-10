@@ -1,0 +1,17 @@
+pipeline:
+  identifier: SAMPLE1
+  name: example-pipeline
+  stages:
+    - identifier:
+        name: Build and Test
+        type: Build
+        spec:
+          steps:
+            - step:
+                type: Run
+                identifier: build_go_app
+                name: Build Go App
+                spec:
+                  command: echo "Welcome to Harness CI" go build go test
+  projectIdentifier: default_project
+  orgIdentifier: default

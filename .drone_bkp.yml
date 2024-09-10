@@ -1,0 +1,16 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: build
+    image: golang:1.18
+    commands:
+      - go build -o drone-plugin .
+
+  - name: run-plugin
+    image: alpine
+    commands:
+      - echo "Pipeline is running"
+      #environment:
+    #PLUGIN_INPUT: "Hello from Drone CI"
