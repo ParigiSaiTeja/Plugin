@@ -51,9 +51,9 @@ pipeline:
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
                     connectorRef: account.harnessImage
-                    repo: saiteja49
+                    repo: plugin_test
                     tags:
-                      - plugin_test
+                      - latest
           platform:
             os: Linux
             arch: Arm64
