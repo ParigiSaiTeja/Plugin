@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ParigiSaiTeja_Plugin_1726014023394-pr-trigger-input-set
+  identifier: Build_ParigiSaiTeja_Plugin_1726014023394prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_ParigiSaiTeja_Plugin_1726014023394
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
