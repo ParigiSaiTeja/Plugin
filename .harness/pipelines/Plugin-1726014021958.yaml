@@ -45,6 +45,15 @@ pipeline:
                       type: JUnit
                   timeout: ""
                   type: Run
+              - step:
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
+                  spec:
+                    connectorRef: account.harnessImage
+                    repo: saiteja
+                    tags:
+                      - plugin
           platform:
             os: Linux
             arch: Arm64
