@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ParigiSaiTeja_Plugin_1726014023394-push-trigger-input-set
+  identifier: Build_ParigiSaiTeja_Plugin_1726014023394pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_ParigiSaiTeja_Plugin_1726014023394
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
