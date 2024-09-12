@@ -54,6 +54,15 @@ pipeline:
                     repo: saiteja49/plugin_test
                     tags:
                       - latest
+              - step:
+                  type: Run
+                  name: Run_4
+                  identifier: Run_4
+                  spec:
+                    connectorRef: account.harnessImage
+                    image: saiteja49/plugin_test
+                    shell: Sh
+                    command: echo "Hello"
           platform:
             os: Linux
             arch: Arm64
